@@ -1,0 +1,10 @@
+{
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "git.ignoreLimitWarning": true,
+  "cSpell.words": [
+    "datetime",
+    "hotspot",
+    "nextjs"
+  ]
+}
