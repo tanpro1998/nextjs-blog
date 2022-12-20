@@ -28,7 +28,7 @@ const Post = async ({ params: { slug } }: Props) => {
     <article className="px-10 pb-28">
       <section className="space-y-2 border border-[#789ff0] text-white">
         <div className=" relative min-h-56 flex flex-col md:flex-row justify-between">
-          <div className=" absolute top-0 w-full h-full opacity-10 blur-sm p-10">
+          <div className=" absolute top-0 w-full h-full opacity-20 blur-sm p-10">
             <Image
               className=" object-cover object-center mx-auto"
               src={urlFor(post.mainImage).url()}
