@@ -5,14 +5,16 @@ import urlFor from "../lib/urlFor";
 export const RichTextComponents = {
   types: {
     image: ({ value }: any) => {
-      <div className=" relative w-full h-96 m-10 mx-auto">
-        <Image
-          className=" object-contain"
-          src={urlFor(value).url()}
-          alt="Blog Post Image"
-          fill
-        />
-      </div>;
+      return (
+        <div className=" relative w-full h-96 m-10 mx-auto">
+          <Image
+            className=" object-contain"
+            src={urlFor(value).url()}
+            alt="Blog Post Image"
+            fill
+          />
+        </div>
+      );
     },
   },
   list: {
@@ -20,7 +22,7 @@ export const RichTextComponents = {
       <ul className="ml-10 py-5 list-decimal">{children}</ul>;
     },
     number: ({ children }: any) => {
-      <ul className="ml-lg list-decimal">{children}</ul>;
+      <ol className="ml-lg list-decimal">{children}</ol>;
     },
   },
   block: {
@@ -31,10 +33,10 @@ export const RichTextComponents = {
       <h2 className="text-4xl py-10 font-bold">{children}</h2>;
     },
     h3: ({ children }: any) => {
-      <h1 className="text-3xl py-10 font-bold">{children}</h1>;
+      <h3 className="text-3xl py-10 font-bold">{children}</h3>;
     },
     h4: ({ children }: any) => {
-      <h1 className="text-2xl py-10 font-bold">{children}</h1>;
+      <h4 className="text-2xl py-10 font-bold">{children}</h4>;
     },
 
     blockquote: ({ children }: any) => {
